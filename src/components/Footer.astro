@@ -1,0 +1,26 @@
+---
+import { Icon } from "astro-icon";
+const today = new Date();
+---
+
+<footer
+  class="text-center p-8 pt-4 pb-16
+  bg-orange-100 text-zinc-950
+  dark:text-zinc-200 dark:bg-zinc-950
+  transition-colors duration-500 ease-in-out"
+>
+  <div class="p-2">
+    &copy; {today.getFullYear()} Lars van Holland. All rights reserved.
+  </div>
+
+  <div class="flex justify-center gap-8 mt-4">
+    <a href="https://github.com/Filterdwater" target="_blank">
+      <span class="sr-only">Go to Lars's GitHub</span>
+      <Icon class="h-auto w-10" pack="ion" name="logo-github" />
+    </a>
+    <a href="https://www.linkedin.com/in/lars-van-holland-754a7b269/">
+      <span class="sr-only">Go to Lars's Linkedin</span>
+      <Icon class="h-auto w-10" pack="ion" name="logo-linkedin" />
+    </a>
+  </div>
+</footer>

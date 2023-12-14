@@ -1,0 +1,154 @@
+---
+import { Icon } from "astro-icon";
+---
+
+<header class="fixed z-50 w-full px-2 py-4 antialiased backdrop-blur-md">
+  <div class="mx-auto max-w-6xl bg-orange-50/10 dark:bg-zinc-900/10 rounded">
+    <nav class="flex items-center justify-between">
+      <div class="flex items-center">
+        <div>
+          <a href="/" class="flex items-center">
+            <Icon class="h-auto w-8" pack="ion" name="code-slash" />
+            <span class="ml-2 text-lg font-bold">Lars van Holland</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigation  -->
+
+      <div class="hidden md:block">
+        <ul class="text-md flex items-center gap-12">
+          <li class="decoration-2 underline-offset-[6px] hover:underline">
+            <a href="/">Home</a>
+          </li>
+
+          <li>
+            <a
+              class="decoration-2 underline-offset-[6px] hover:underline"
+              href="./about"
+            >
+              About</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="decoration-2 underline-offset-[6px] hover:underline"
+              href="./projects"
+            >
+              Projects</a
+            >
+          </li>
+
+          <li>
+            <a
+              class="decoration-2 underline-offset-[6px] hover:underline"
+              href="./blog"
+            >
+              Blog</a
+            >
+          </li>
+          <li>
+            <a
+              class="flex items-center decoration-2 underline-offset-[6px] hover:underline"
+              href="https://github.com/FilterdWater/PersonalWebsite"
+              target="_blank"
+            >
+              <Icon class="h-auto w-4" pack="ion" name="logo-github" />
+              <span class="ml-1">Source</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- lightDarkToggle -->
+
+      <div
+        class="flex items-center rounded-full bg-orange-300 p-[2px] dark:bg-zinc-600"
+      >
+        <!-- LightModeBtn -->
+        <button
+          id="sunIcon"
+          aria-label="LightModeBtn"
+          class="cursor-pointer rounded-full bg-orange-50 p-2 dark:bg-transparent"
+        >
+          <Icon class="h-4 w-auto" pack="ion" name="sunny" />
+        </button>
+
+        <!-- DarkModeBtn -->
+        <button
+          id="moonIcon"
+          aria-label="DarkModeBtn"
+          class="cursor-pointer rounded-full bg-transparent p-2 dark:bg-zinc-900"
+        >
+          <Icon class="h-4 w-auto" pack="ion" name="moon" />
+        </button>
+      </div>
+
+      <!-- HamburgerMenuBtn -->
+
+      <div class="block md:hidden">
+        <button
+          class="inline-flex justify-center rounded-md border border-zinc-400 p-2 text-sm font-medium shadow-sm transition-all hover:bg-orange-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100 dark:border-zinc-700 dark:hover:bg-zinc-800"
+          aria-label="MobileMenuBtn"
+          id="btnMobileMenu"
+          type="button"
+        >
+          <svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            class="h-5 w-5"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="none"
+              stroke-linecap="round"
+              stroke-miterlimit="10"
+              stroke-width="48"
+              d="M88 152h336M88 256h336M88 360h336"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Mobile Menu -->
+
+<div
+  id="mobileMenu"
+  class="overflow-hidden fixed inset-0 z-40 hidden overflow-y-auto backdrop-blur-sm md:hidden"
+>
+  <div class="flex flex-col justify-center items-center h-screen">
+    <div class="container ml-6">
+      <div class="flex flex-col space-y-8 py-12 text-2xl">
+        <div class="relative">
+          <a href="/" class="font-extrabold leading-none"> Home</a>
+        </div>
+        <div class="relative">
+          <a href="./about" class="font-extrabold leading-none"> About</a>
+        </div>
+        <div class="relative">
+          <a href="./projects" class="font-extrabold leading-none"> Projects</a>
+        </div>
+        <div class="relative">
+          <a href="./blog" class="font-extrabold leading-none"> Blog</a>
+        </div>
+        <div class="relative">
+          <a
+            class="flex items-center font-extrabold leading-none"
+            href="https://github.com/FilterdWater/PersonalWebsite"
+            target="_blank"
+          >
+            <Icon class="h-6 w-auto" pack="ion" name="logo-github" />
+            <div class="ml-1">Source</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
