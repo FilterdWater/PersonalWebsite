@@ -1,7 +1,21 @@
 ---
 import DefaultLayout from "../layouts/DefaultLayout.astro";
+import { Image } from "astro:assets";
+import LarsBannerPhoto from "../assets/images/jpg/Lars/lars-banner-photo.jpg";
 ---
 
 <DefaultLayout>
-  <h1>Home</h1>
+  <section class="relative h-96 flex justify-center items-center">
+    <div class="absolute w-full h-full overflow-hidden">
+      <Image
+        class="absolute inset-0 min-w-full min-h-full object-cover opacity-50"
+        src={LarsBannerPhoto}
+        alt="Lars's room banner photo"
+      />
+    </div>
+    <div class="z-10 text-center px-8">
+      <div class="uppercase text-sm md:text-lg mb-4">Welcome to</div>
+      <div class="text-4xl md:text-7xl font-medium">My personal website</div>
+    </div>
+  </section>
 </DefaultLayout>

@@ -1,7 +1,9 @@
 ---
 import DefaultLayout from "../layouts/DefaultLayout.astro";
+import { Image } from "astro:assets";
+import PlaceHolderImage from "../assets/images/jpg/default-placeholder.jpg";
 ---
 
 <DefaultLayout>
-  <img src="images/jpg/default-placeholder.jpg" alt="Place-holder-test-image" />
+  <Image src={PlaceHolderImage} alt="Place-holder-test-image" />
 </DefaultLayout>
