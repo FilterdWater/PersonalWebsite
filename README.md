@@ -21,7 +21,6 @@ Welcome to my personal website's repo. It's a platform for exploring ideas, shar
   - [Purpose](#purpose)
   - [Content](#content)
   - [Technical Details](#technical-details)
-  - [Contact Information](#contact-information)
   - [Feedback](#feedback)
 
 # Disclaimer
@@ -30,7 +29,7 @@ As of 03/12/2023, this project is a work in progress. Some features mentioned ma
 
 ## Purpose
 
-This website is a platform to experiment with new technologies, showcase school projects, and document my experiences as a developer. Explore my portfolio and read some of my blog posts!
+This website is a platform to experiment with new technologies, showcase school projects, and document my experiences as a developer.
 
 ## Content
 
@@ -47,10 +46,6 @@ This website is a platform to experiment with new technologies, showcase school 
   - Using [Tailwind CSS](https://tailwindcss.com/) for its ease of use and excellent documentation.
 - **Code Formatter:**
   - Using [Prettier](https://prettier.io/) for consistent code style
-
-## Contact Information
-
-Feel free to reach out through the website's form (not available yet) or connect on [LinkedIn](https://www.linkedin.com/in/lars-van-holland-754a7b269/).
 
 ## Feedback
 
